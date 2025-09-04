@@ -3,12 +3,16 @@
     margin: 0;
     padding: 0;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body{
     background-color: black;
 }
 .main{
     background-image: url(Assets/Netflix_background.jpg);
-    height:80vh;
+    height:90vh;
     /* width:100vw; */
     background-size:max(1200px,100vw);
     position: relative;
@@ -16,7 +20,7 @@ body{
     background-repeat: none;
 }
 .main .box{
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     opacity:0.7;
     background-color: black;
@@ -125,6 +129,15 @@ nav button{
     gap:7px;
     }
 }
+.first h1{
+    font-size: 48px;
+    font-weight: 700;
+    padding: 3px;
+}
+.first p{
+    font-size: 20px;
+    padding:4px;
+}
 @media only screen and (max-width:420px){
 .btn{
     padding: 2.5px 5px;
@@ -151,4 +164,114 @@ nav button{
     text-align: center;
     font-size: 30px;
 }
+}
+.first{
+    font-family: "Open-Sans",sans-serif;
+    padding: 70px;
+    width:100%;
+    display: flex;
+    color: white;
+    justify-content:center;
+    align-items: center;
+    max-width: 70vw;
+    margin:auto;
+    gap:70px;
+}
+/* .first h1{
+    width:700px;
+} */
+.secimg img{
+    width:348px;
+    height:200px;
+}
+.secimg{
+    position: relative;
+}
+.secimg video {
+    width: 616px;
+    height: 190px;
+    position: absolute;
+    top: -41px;
+    right: -179px;
+    padding: 46px; 
+}
+.seperation2{
+    height: 6px;
+    width:90vw;
+    margin: auto;
+    background: linear-gradient(to right, rgb(0, 0, 0) 16%, rgb(81, 81, 81), rgb(139, 139, 139), rgb(81, 81, 81), rgb(0, 0, 0) 84%);
+}
+.second img{
+    height:300px;
+    width:150px;
+}
+.second{
+    max-width: 75vw;
+    padding: 22px;
+}
+.second h1{
+    width:700px;
+}
+.secimg2 img{
+    width:300px;
+}
+@media only screen and (max-width:1000px){
+.first{
+    padding: 70px;
+    /* width:100%; */
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content:center;
+    align-items: flex-start;
+    /* max-width: 70vw; */
+    margin:auto;
+    gap:70px;
+    /* text-align: center; */
+    /* font-size: 0.2rem; */
+
+}
+.first h1{
+    width:auto;
+}
+.second h1{
+    width: auto;
+}
+.secimg img{
+    width: 250px;
+    height: auto;  /* keeps ratio */
+  }
+.secimg video {
+    width: 243px;
+    height: auto;
+    position: absolute;
+    top: -44px;
+    right: -42px;
+    padding: 46px; 
+}
+}
+@media only screen and (max-width:700px){
+.secimg img{
+    width: 180px;
+    height: auto;
+  }
+.secimg video {
+    width: 175px;
+    height: auto;
+    position: absolute;
+    top: -43px;
+    right: -44px;
+    padding: 46px;
+}
+.secimg2 img{
+    width:150px;
+}
+}
+@media only screen and (max-width:500px){
+  .first h1 {
+      font-size: 22px;
+  }
+  .first p {
+      font-size: 14px;
+  }
 }
