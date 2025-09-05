@@ -338,3 +338,60 @@ input{
     font-family: "Open Sans",sans-serif;
     padding-bottom: 65px;
 }
+footer{
+    max-width: 80vw;
+    margin: auto;
+    font-family: "Poppins",sans-serif;
+    color: rgba(255, 255, 255, 0.675);
+}
+footer span{
+    margin-left: 35px;
+}
+.footer{
+    color: rgba(255, 255, 255, 0.675);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 40px;
+    font-size: 14px;
+    gap:23px;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap:9px;
+}
+footer a{
+    color: rgba(255, 255, 255, 0.675);
+}
+@media only screen and (max-width:1000px){
+    .footer{
+        grid-template-columns: 1fr 1fr;
+        gap:10px;
+    }
+}
+@media only screen and (max-width:600px){
+    .footer{
+        grid-template-columns: 1fr;
+        gap:10px;
+    }
+    footer span{
+        font-size: 15px;
+    }
+}
+.footerbtn button{
+    margin: 35px;
+}
+.footerend div{
+    margin-left: 35px;
+    margin-bottom: 25px;
+}
+.end{
+    margin-left: 65px;
+    font-size: 12px;
+}
+.footerend a{
+    color:rgb(68, 142, 244)
+}
+.footerend{
+    margin-bottom: 150px;
+}
