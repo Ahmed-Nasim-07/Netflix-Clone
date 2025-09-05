@@ -17,7 +17,7 @@ body{
     background-size:max(1200px,100vw);
     position: relative;
     background-position: center center;
-    background-repeat: none;
+    background-repeat: no-repeat;
 }
 .main .box{
     height: 90vh;
@@ -138,6 +138,9 @@ input{
     font-size: 20px;
     padding:4px;
 }
+.hero h1{
+    font-size: 30px;
+}
 @media only screen and (max-width:420px){
 .btn{
     padding: 2.5px 5px;
@@ -169,6 +172,9 @@ input{
     font-weight: 1000;
     text-align: center;
     font-size: 30px;
+}
+nav img{
+    width:100px;
 }
 }
 .first{
@@ -375,6 +381,18 @@ footer a{
         gap:10px;
     }
     footer span{
+        font-size: 7px;
+    }
+    input{
+        font-size: 10px;
+        padding: 15px 100px 15px 14px;
+    }
+    .faqbox{
+        width:60vw;
+        font-size: 17px;
+        padding: 16px;
+    }
+    .faq h2{
         font-size: 15px;
     }
 }
